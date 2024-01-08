@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+logs/
+*.log
+*.json
+
+# TypeScript
+dist/
+
+# IDE/Editor
+.vscode/
+.idea/
+.project
+.classpath
+.settings/
+
+# Environment
+.env
+
+# Dependencies
+yarn.lock
+package-lock.json
+
+# Build artifacts
+/build/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

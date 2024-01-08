@@ -1,0 +1,12 @@
+const controller = require("../controllers/bookController"); //kind the role of middleware
+const router = require("express").Router();
+const fbAuth = require("../util/fbAuth");
+
+//making the crud
+
+router
+  .get("/", controller.getAllBooks)
+  .get("/:id", controller.getOneBook)
+  .post("/", fbAuth, controller.createOneBook);
+
+module.exports = router;
